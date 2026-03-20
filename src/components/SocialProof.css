@@ -1,0 +1,62 @@
+.social-proof {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+  min-width: 150px;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-xl);
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  max-width: 400px;
+  box-shadow: var(--shadow-md);
+  text-align: left;
+  position: relative;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--color-primary);
+}
