@@ -27,8 +27,10 @@
   background: var(--color-background);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0,0,0,0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
@@ -37,8 +39,15 @@
 }
 
 .card-icon {
-  font-size: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.card-icon svg {
+  display: block;
 }
 
 .card h3 {

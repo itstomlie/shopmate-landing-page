@@ -1,9 +1,9 @@
-import React from 'react';
-import './HowItWorks.css';
+import React from "react";
+import "./HowItWorks.css";
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className="how-it-works section">
+    <section id="how-it-works" className="how-it-works section">
       <div className="container">
         <h2 className="section-title text-center">How It Works</h2>
         <div className="steps-container">
@@ -22,7 +22,7 @@ const HowItWorks: React.FC = () => {
           <div className="step">
             <div className="step-number">3</div>
             <h3>Compare</h3>
-            <p>See price trends and find the best deals.</p>
+            <p>See price trends and make informed decision</p>
           </div>
         </div>
       </div>

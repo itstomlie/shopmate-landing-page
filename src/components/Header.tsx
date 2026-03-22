@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './Header.css';
+import React, { useState, useEffect } from "react";
+import "./Header.css";
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -13,20 +13,24 @@ const Header: React.FC = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="container header-container">
-        <div className="logo">Shopmate</div>
+        <a href="#home" className="logo">
+          Shopmate
+        </a>
         <nav className="nav-links">
-          <a href="#features">Features</a>
+          <a href="#about">About</a>
           <a href="#how-it-works">How It Works</a>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#features">Features</a>
         </nav>
-        <button className="btn-primary btn-sm">Download</button>
+        <a href="#wishlist" className="btn-primary btn-sm header-cta-link">
+          Join Wishlist
+        </a>
       </div>
     </header>
   );

@@ -1,11 +1,10 @@
-import React from 'react';
-import Header from './Header';
-import Hero from './Hero';
-import ProblemSolution from './ProblemSolution';
-import HowItWorks from './HowItWorks';
-import Features from './Features';
-import SocialProof from './SocialProof';
-import Footer from './Footer';
+import React from "react";
+import Header from "./Header";
+import Hero from "./Hero";
+import ProblemSolution from "./ProblemSolution";
+import HowItWorks from "./HowItWorks";
+import Features from "./Features";
+import Footer from "./Footer";
 
 const LandingPage: React.FC = () => {
   return (
@@ -15,7 +14,7 @@ const LandingPage: React.FC = () => {
       <ProblemSolution />
       <HowItWorks />
       <Features />
-      <SocialProof />
+      {/* <SocialProof /> */}
       <Footer />
     </div>
   );

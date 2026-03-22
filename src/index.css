@@ -1,27 +1,32 @@
 :root {
-  --color-primary: #4A7C59; /* Forest Green */
-  --color-secondary: #D4A373; /* Earthy Brown/Orange */
-  --color-accent: #E9C46A; /* Warm Yellow/Gold */
-  --color-background: #FAFAF5; /* Off-white/Cream */
+  --color-primary: #4a7c59; /* Forest Green */
+  --color-secondary: #d4a373; /* Earthy Brown/Orange */
+  --color-accent: #e9c46a; /* Warm Yellow/Gold */
+  --color-background: #fafaf5; /* Off-white/Cream */
   --color-text: #333333; /* Dark Gray */
   --color-text-light: #666666;
-  --color-white: #FFFFFF;
-  
-  --font-family-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+  --color-white: #ffffff;
+
+  --font-family-sans: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
-  
+
   --border-radius: 12px;
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 96px;
 }
 
 body {
@@ -33,7 +38,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: 700;
   line-height: 1.2;
@@ -52,7 +62,7 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
