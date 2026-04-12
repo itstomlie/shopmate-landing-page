@@ -1,21 +1,18 @@
 import React from "react";
-import WishlistForm from "./WishlistForm";
+import StoreButtons from "./StoreButtons";
 import "./Footer.css";
 
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <div id="wishlist" className="final-cta section">
+      <div id="download" className="final-cta section">
         <div className="container text-center">
           <h2 className="cta-title">Ready to Start Saving?</h2>
           <p className="cta-subtitle">
-            Shopmate is coming soon. Join the wishlist to get notified first.
+            Download Shopmate on Android. iOS is coming soon.
           </p>
-          <div className="footer-wishlist-wrap">
-            <WishlistForm
-              variant="on-dark"
-              placeholder="Enter your email to join the wishlist"
-            />
+          <div className="footer-download-wrap">
+            <StoreButtons variant="on-dark" />
           </div>
         </div>
       </div>

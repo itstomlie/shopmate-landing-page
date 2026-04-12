@@ -28,8 +28,8 @@ const Header: React.FC = () => {
           <a href="#how-it-works">How It Works</a>
           <a href="#features">Features</a>
         </nav>
-        <a href="#wishlist" className="btn-primary btn-sm header-cta-link">
-          Join Wishlist
+        <a href="#download" className="btn-primary btn-sm header-cta-link">
+          Download App
         </a>
       </div>
     </header>

@@ -1,0 +1,44 @@
+.store-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.google-play-link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.google-play-badge {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.app-store-coming-soon {
+  border: 1px solid var(--color-text-light);
+  background: transparent;
+  color: var(--color-text);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.store-buttons--on-dark .app-store-coming-soon {
+  border-color: rgba(255, 255, 255, 0.65);
+  color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .google-play-badge {
+    width: 170px;
+  }
+}

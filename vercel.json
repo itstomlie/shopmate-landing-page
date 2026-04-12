@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/download-android",
+      "destination": "https://play.google.com/store/apps/details?id=com.itstomlie.Guruu&pcampaignid=shopmate-landing-page",
+      "permanent": false
+    }
+  ]
+}

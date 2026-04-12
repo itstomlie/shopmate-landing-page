@@ -2,7 +2,7 @@ import React from "react";
 import { BadgePercent, ArrowUpDown, Users } from "lucide-react";
 import squirrelMascot from "../assets/squirrel_mascot.png";
 import appMockup from "../assets/app_mockup.png";
-import WishlistForm from "./WishlistForm";
+import StoreButtons from "./StoreButtons";
 import "./Hero.css";
 
 const Hero: React.FC = () => {
@@ -19,8 +19,7 @@ const Hero: React.FC = () => {
             money on every trip. Join the smart shoppers today!
           </p>
           <div className="hero-cta">
-            <p className="coming-soon">Coming Soon!</p>
-            <WishlistForm />
+            <StoreButtons />
           </div>
           <div className="hero-stats">
             <div className="stat-item">

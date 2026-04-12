@@ -20,13 +20,13 @@
   margin-bottom: var(--spacing-lg);
 }
 
-.footer-wishlist-wrap {
+.footer-download-wrap {
   display: flex;
   justify-content: center;
 }
 
-.footer-wishlist-wrap .wishlist-signup {
-  max-width: 560px;
+.footer-download-wrap .store-buttons {
+  justify-content: center;
 }
 
 .footer-links {
