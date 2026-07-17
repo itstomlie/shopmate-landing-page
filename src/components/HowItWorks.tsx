@@ -5,24 +5,36 @@ const HowItWorks: React.FC = () => {
   return (
     <section id="how-it-works" className="how-it-works section">
       <div className="container">
-        <h2 className="section-title text-center">How It Works</h2>
+        <div className="text-center reveal">
+          <span className="section-eyebrow">How it works</span>
+          <h2 className="section-title">Three steps to smarter shopping</h2>
+        </div>
         <div className="steps-container">
-          <div className="step">
+          <div className="step reveal">
             <div className="step-number">1</div>
             <h3>Scan</h3>
-            <p>Snap a photo of your receipt after shopping.</p>
+            <p>
+              Snap your receipt after shopping — AI reads every item, price,
+              and discount in seconds.
+            </p>
           </div>
           <div className="step-connector"></div>
-          <div className="step">
+          <div className="step reveal">
             <div className="step-number">2</div>
             <h3>Review</h3>
-            <p>We automatically organize your purchase history.</p>
+            <p>
+              Confirm items with the zoomable receipt viewer. Your purchase
+              history organizes itself.
+            </p>
           </div>
           <div className="step-connector"></div>
-          <div className="step">
+          <div className="step reveal">
             <div className="step-number">3</div>
-            <h3>Compare</h3>
-            <p>See price trends and make informed decision</p>
+            <h3>Decide</h3>
+            <p>
+              See trends and store comparisons at a glance — and make every
+              purchase an informed decision.
+            </p>
           </div>
         </div>
       </div>

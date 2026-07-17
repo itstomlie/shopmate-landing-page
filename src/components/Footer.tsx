@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="container text-center">
           <h2 className="cta-title">Ready to Start Saving?</h2>
           <p className="cta-subtitle">
-            Download Shopmate on Android. iOS is coming soon.
+            Free on Android — no sign-up needed. iOS is coming soon.
           </p>
           <div className="footer-download-wrap">
             <StoreButtons variant="on-dark" />
@@ -23,10 +23,20 @@ const Footer: React.FC = () => {
             <h3>Shopmate</h3>
             <p>Shop Smarter, Not Harder.</p>
           </div>
-          <div className="footer-nav">
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#how-it-works">How It Works</a>
+          <div className="footer-columns">
+            <nav className="footer-nav" aria-label="Product">
+              <span className="footer-nav-title">Product</span>
+              <a href="#about">About</a>
+              <a href="#how-it-works">How It Works</a>
+              <a href="#features">Features</a>
+            </nav>
+            <nav className="footer-nav" aria-label="Support">
+              <span className="footer-nav-title">Support</span>
+              <a href="/support">Support</a>
+              <a href="/privacy">Privacy Policy</a>
+              <a href="/delete-account">Delete Account</a>
+              <a href="mailto:tom@shopmategrocery.com">Contact</a>
+            </nav>
           </div>
           <div className="footer-copy">
             &copy; {new Date().getFullYear()} Shopmate. All rights reserved.

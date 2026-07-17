@@ -1,12 +1,12 @@
 import React from "react";
-import { Camera, ChartColumn, Scale, Brain } from "lucide-react";
+import { Camera, ChartLine, Scale, Bell } from "lucide-react";
 import "./ProblemSolution.css";
 
 const ProblemSolution: React.FC = () => {
   return (
     <section id="about" className="problem-solution section">
       <div className="container">
-        <div className="problem-section">
+        <div className="problem-section reveal">
           <h2 className="section-title">
             Ever wonder if you're paying too much?
           </h2>
@@ -18,38 +18,45 @@ const ProblemSolution: React.FC = () => {
         </div>
 
         <div className="solution-cards">
-          <div className="card">
+          <div className="card reveal">
             <div className="card-icon" aria-hidden="true">
-              <Camera size={44} strokeWidth={2.25} />
+              <Camera size={32} strokeWidth={2.25} />
             </div>
             <h3>Scan Receipts</h3>
             <p>
-              Quickly digitize your shopping history with our AI-powered
-              scanner.
+              Snap a photo — even multi-page receipts — and AI extracts every
+              item, price, and discount for you.
             </p>
           </div>
-          <div className="card">
+          <div className="card reveal">
             <div className="card-icon" aria-hidden="true">
-              <ChartColumn size={44} strokeWidth={2.25} />
+              <ChartLine size={32} strokeWidth={2.25} />
             </div>
-            <h3>Track Prices</h3>
-            <p>See price trends over time and know exactly when to buy.</p>
+            <h3>Track Price History</h3>
+            <p>
+              See how each product's price moved over the last year and know
+              exactly when to buy.
+            </p>
           </div>
-          <div className="card">
+          <div className="card reveal">
             <div className="card-icon" aria-hidden="true">
-              <Scale size={44} strokeWidth={2.25} />
+              <Scale size={32} strokeWidth={2.25} />
             </div>
             <h3>Compare Stores</h3>
             <p>
-              Find out which store has the best price for your favorite items.
+              Side-by-side prices across stores, normalized per unit — $/100g,
+              $/L — so comparisons are fair.
             </p>
           </div>
-          <div className="card">
+          <div className="card reveal">
             <div className="card-icon" aria-hidden="true">
-              <Brain size={44} strokeWidth={2.25} />
+              <Bell size={32} strokeWidth={2.25} />
             </div>
-            <h3>Shop Confidently</h3>
-            <p>Make informed decisions and stop overpaying for groceries.</p>
+            <h3>Watch Prices</h3>
+            <p>
+              Shopmate flags when items you regularly buy get cheaper — or
+              quietly creep up.
+            </p>
           </div>
         </div>
       </div>
