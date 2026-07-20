@@ -1,6 +1,8 @@
-import LandingPage from './components/LandingPage';
-import AdminPage from './admin/AdminPage';
-import './App.css';
+import LandingPage from "./components/LandingPage";
+import AdminPage from "./admin/AdminPage";
+import "./App.css";
+
+import { Analytics } from "@vercel/analytics/next";
 
 const isAdminRoute = /^\/admin(\/|$)/.test(window.location.pathname);
 
@@ -12,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <LandingPage />
+      <Analytics />
     </div>
   );
 }
