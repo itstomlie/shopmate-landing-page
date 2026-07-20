@@ -2,7 +2,7 @@ import LandingPage from "./components/LandingPage";
 import AdminPage from "./admin/AdminPage";
 import "./App.css";
 
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const isAdminRoute = /^\/admin(\/|$)/.test(window.location.pathname);
 
