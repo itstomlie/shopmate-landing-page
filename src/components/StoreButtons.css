@@ -5,40 +5,91 @@
   gap: 0.75rem;
 }
 
-.google-play-link {
+/* Shared pill — both stores render identically (same height, radius, padding) */
+.store-btn {
   display: inline-flex;
   align-items: center;
-  line-height: 0;
-}
-
-.google-play-badge {
-  width: 180px;
-  height: auto;
-  display: block;
-}
-
-.app-store-coming-soon {
-  border: 1px solid var(--color-text-light);
-  background: transparent;
-  color: var(--color-text);
-  font-weight: 700;
-  border-radius: 999px;
-  padding: 0.65rem 1rem;
-  cursor: not-allowed;
-  opacity: 0.8;
-}
-
-.store-buttons--on-dark .app-store-coming-soon {
-  border-color: rgba(255, 255, 255, 0.65);
+  gap: 0.6rem;
+  height: 52px;
+  padding: 0 1.15rem;
+  box-sizing: border-box;
+  border: 1px solid var(--color-text);
+  background: var(--color-text);
   color: var(--color-white);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.store-btn__logo {
+  width: 26px;
+  height: 26px;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.store-btn__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.store-btn__text small {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+.store-btn__text strong {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* On-dark surfaces (footer/hero over color): white pill, dark ink */
+.store-buttons--on-dark .store-btn {
+  border-color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-text);
+}
+
+/* Compact size — used in the header */
+.store-buttons--sm .store-btn {
+  height: 40px;
+  padding: 0 0.8rem;
+  border-radius: 10px;
+  gap: 0.45rem;
+}
+
+.store-buttons--sm .store-btn__logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.store-buttons--sm .store-btn__text small {
+  font-size: 0.5rem;
+}
+
+.store-buttons--sm .store-btn__text strong {
+  font-size: 0.82rem;
 }
 
 @media (max-width: 768px) {
   .store-buttons {
     justify-content: center;
-  }
-
-  .google-play-badge {
-    width: 170px;
   }
 }

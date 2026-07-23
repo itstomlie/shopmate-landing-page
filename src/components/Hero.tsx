@@ -25,11 +25,14 @@ const Hero: React.FC = () => {
           </h1>
           <p className="hero-subtitle">
             Scan your receipts and Shopmate turns them into price knowledge —
-            see trends, compare stores, and make every grocery run an{" "}
+            see price history, compare stores, and make every grocery run an{" "}
             <em>informed decision</em>, not a guess.
           </p>
           <div className="hero-cta">
             <StoreButtons />
+            <p className="hero-cta-note">
+              No sign-up required · No credit card required
+            </p>
           </div>
           <div className="hero-stats">
             <div className="stat-item">
@@ -38,7 +41,7 @@ const Hero: React.FC = () => {
                 Know Before You Buy
               </span>
               <span className="stat-label">
-                Price trends for every product you scan
+                Price history for every product you scan
               </span>
             </div>
             <div className="stat-item">

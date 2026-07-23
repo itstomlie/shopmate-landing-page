@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="container text-center">
           <h2 className="cta-title">Ready to Start Saving?</h2>
           <p className="cta-subtitle">
-            Free on Android — no sign-up needed. iOS is coming soon.
+            Free on Android — no sign-up needed. iOS now in beta on TestFlight.
           </p>
           <div className="footer-download-wrap">
             <StoreButtons variant="on-dark" />

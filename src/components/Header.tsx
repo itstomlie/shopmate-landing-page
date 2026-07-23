@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import StoreButtons from "./StoreButtons";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -28,9 +29,9 @@ const Header: React.FC = () => {
           <a href="#how-it-works">How It Works</a>
           <a href="#features">Features</a>
         </nav>
-        <a href="#download" className="btn-primary btn-sm header-cta-link">
-          Download App
-        </a>
+        <div className="header-cta">
+          <StoreButtons size="sm" show="auto" />
+        </div>
       </div>
     </header>
   );
